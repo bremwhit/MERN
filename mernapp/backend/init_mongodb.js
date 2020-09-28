@@ -7,7 +7,7 @@ const options = {
     useUnifiedTopology: true
 }
 
-mongoose.connect(URI, options);
+//mongoose.connect(URI, options);
 
 const connection = mongoose.connection;
 connection.once('open', () => {
