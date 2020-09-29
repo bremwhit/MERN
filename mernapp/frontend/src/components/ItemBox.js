@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class ItemBox extends Component {
     render() {
         return (
-            <div className='ItemBox'>
+            <div className='ItemBox' >
                 <h4>Product Code</h4>
                 <h4>Product</h4>
                 <h4>Instructions</h4>

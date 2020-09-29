@@ -74,12 +74,13 @@ html, body, #root {
         padding: 2px;
         @include highlighter(black);
         overflow-y: scroll;
-
-        .ItemBox{
+        
+        .ItemBox, .ItemHeader{
             border: 2px solid black;
             margin-top: 2px;
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
+            grid-template-columns: repeat(6, 1fr); 
+
     
             h4 {
                 border: 2px solid black;
