@@ -1,6 +1,6 @@
 
 module.exports = {
-    createNewUser: function(model, userBody) {
+    createNewUser: function(model, modelBody) {
         model.create(modelBody, function(err, newUser) {
             if (err) console.log(err);
             console.log("new user, " + newUser.user_email + " added to database!");
