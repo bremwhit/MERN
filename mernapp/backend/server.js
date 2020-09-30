@@ -2,28 +2,17 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const mongoose = require('mongoose');
+const dbtools = require('./dbtools/dbtools');
 const userSchema = require('./models/userSchema');
+const orderSchema = require('./models/orderSchema');
+const productSchema = require('./models/productSchema');
 
 require('./init_mongodb');
 
+// creating models for mongoose schemas
 const user = mongoose.model('user', userSchema, 'users');
-
-const newUser = new user({
-    user_ID: mongoose.Types.ObjectId(),
-    user_email: "newUser@email.com",
-    hash: "randomPWhash",
-    acc_type: "User",
-    order_IDs: [
-        "id1",
-        "id2",
-        "id3"
-    ]
-})
-
-newUser.save((err, newUser) => {
-    if(err) return console.log(err);
-    console.log(newUser.user_email + " has been added...hopefully");
-})
+const product = mongoose.model('product', productSchema, 'products');
+const order = mongoose.model('order', orderSchema, 'orders');
 
 const app = express();
 const port = process.env.PORT || 5000;
