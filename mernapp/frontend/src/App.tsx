@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header'
-import ItemHeader from './components/ItemHeader'
+import  Header from './components/Header';
+import ItemHeader from './components/ItemHeader';
 import ItemBox from './components/ItemBox';
 import SideBarLeft from './components/SideBarLeft';
-import QueryBar from './components/QueryBar'
+import QueryBar from './components/QueryBar';
+
+
 
 function App() {
   return (

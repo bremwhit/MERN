@@ -1,6 +1,12 @@
+import { type } from 'os'
 import React, { Component } from 'react'
 
-export class SideBarItem extends Component {
+type MyProps = Readonly<{
+    itemTitle: string;
+    quantity: number;
+}>
+
+export class SideBarItem extends Component<MyProps> {
     render() {
         return (
             <div className='SideBarItem'>
