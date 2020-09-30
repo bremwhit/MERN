@@ -4,7 +4,8 @@ require('dotenv').config();
 const URI = process.env.MONGODB_URI;
 const options = {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useFindAndModify: false
 }
 
 mongoose.connect(URI, options);

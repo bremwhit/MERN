@@ -4,7 +4,6 @@ const { Schema } = mongoose;
 mongoose.set('useCreateIndex', true);
 
 const productSchema = new Schema ({
-    product_ID: String,
     product_Name: String,
     quantity: Number,
     description: String,
