@@ -1,5 +1,5 @@
-import { type } from 'os'
-import React, { Component } from 'react'
+import { type } from 'os';
+import React, { Component } from 'react';
 
 type MyProps = Readonly<{
     itemTitle: string;
