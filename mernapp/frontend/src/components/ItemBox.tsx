@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+
+
 
 export class ItemBox extends Component {
     render() {
