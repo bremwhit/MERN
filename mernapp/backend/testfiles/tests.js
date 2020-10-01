@@ -11,6 +11,16 @@ module.exports = {
             "orderID2"
         ]
     },
+    testuser2: {
+        user_ID: mongoose.Types.ObjectId(),
+        user_email: "newuser2@email.com",
+        hash: "hashpwd",
+        acc_type: "user",
+        order_IDs: [
+            "orderID1",
+            "orderID2"
+        ]
+    },
     testproduct: {
         product_Name: "box of stuff",
         quantity: 100,

@@ -28,8 +28,8 @@ module.exports = {
     // modelBody: Object containing order data
     addNewOrder: function(model, modelBody) {
         model.create(modelBody, function(err, newOrder) {
-            if (err) return console.log(err.message);
-            console.log(newOrder.order_ID + " added to database!");
+            if (err) return console.log(err);
+            console.log("New order added: %s", newOrder.id);
         })
     },
     /*add new order_ID to user document */
@@ -37,10 +37,15 @@ module.exports = {
     // user_ID: the user_ID of the document in MongoDB to be updated
     // order_ID: the order ID to add to array of IDs
     add_Order_to_User: function(model, user_ID, order_ID) {
-        model.findOneAndUpdate({user_ID: user_ID}, {$push: { order_IDs: order_ID }}, function(err, res) {
+        model.findOneAndUpdate(
+            {_id: user_ID}, 
+            {$push: { order_IDs: order_ID }},
+            findOneAndUpdate_options, 
+            function(err, res) {
             if (err) return console.log(err.message);
-            console.log(res);
-        });
+            console.log("%s added to order_IDs for user %s", order_ID, user_ID);
+            }
+        );
     }
 }
 

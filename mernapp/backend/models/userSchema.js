@@ -7,7 +7,7 @@ const userSchema = new Schema ({
     user_email: {type: String, unique: true, required: true},
     hash: {type: String, required: true},
     acc_type: String,
-    order_IDs: [{type: String, unique: true}]
+    order_IDs: [String]
 });
 
-module.exports = userSchema;
+module.exports = userSchema;0

@@ -12,8 +12,6 @@ const order = mongoose.model('order', orderSchema, 'orders');
 const tests = require('./testfiles/tests');
 require('./init_mongodb');
 
-
-
 const app = express();
 const port = process.env.PORT || 5000;
 
