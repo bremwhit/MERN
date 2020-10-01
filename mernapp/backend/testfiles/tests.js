@@ -5,16 +5,9 @@ module.exports = {
         user_ID: mongoose.Types.ObjectId(),
         user_email: "newuser@email.com",
         hash: "hashpwd",
-        acc_type: "user",
-        order_IDs: [
-            "orderID1",
-            "orderID2"
-        ]
-    },
-    testuser2: {
-        user_ID: mongoose.Types.ObjectId(),
-        user_email: "newuser2@email.com",
-        hash: "hashpwd",
+        fname: "Alan",
+        lname: "Turing",
+        phone: 7313141592,
         acc_type: "user",
         order_IDs: [
             "orderID1",
