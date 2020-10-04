@@ -7,8 +7,8 @@ export class QueryBar extends Component {
     render() {
         return (
             <div className='QueryBar'>
-                <SearchModule />
-                <FilterModule />
+                <SearchModule   />
+                <FilterModule   />
                 <AddOrderModule />
             </div>
         )

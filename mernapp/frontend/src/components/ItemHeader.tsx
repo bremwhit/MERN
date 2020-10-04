@@ -4,7 +4,7 @@ export class ItemHeader extends Component {
     render() {
         return (
             <div className='ItemHeader' >
-            <h4>Product Code</h4>
+            <h4>Header Product Code</h4>
             <h4>Product</h4>
             <h4>Instructions</h4>
             <h4>Status</h4>

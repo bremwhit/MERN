@@ -13,8 +13,8 @@ export class SideBarItem extends Component<MyProps> {
                 <h3>{this.props.itemTitle}</h3>
                 <h3>{this.props.quantity}</h3>
             </div>
-        )
+        );
     }
 }
 
-export default SideBarItem
+export default SideBarItem;
